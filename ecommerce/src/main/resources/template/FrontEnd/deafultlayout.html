@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html layout:decorate="FrontEnd/defaultlayout" xmlns:th="http://thymeleaf.org"
+      xmlns:layout="http://www.w3.org/1999/xhtml">
+
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+        <meta charset="UTF-8">
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <title>default</title>
+    <title>default</title>
+</head>
+<body>
+<!---- header--->
+<div th:replace="FrontEnd/Header :: header">my header</div>
+
+<!---- content--->
+<section layout:fragment="content">
+    <p>body</p>
+</section>
+<!---- footer--->
+
+<div th:replace="FrontEnd/footer :: footer">my footer</div>
+</body>
+</html>
